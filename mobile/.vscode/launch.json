@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "mobile",
+        //     "request": "launch",
+        //     "type": "dart"
+        // },
+        {
+            "name": "mobile dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "args": ["--flavor","dev","--target","lib/flavours/main_dev.dart"]
+        },
+        {
+            "name": "mobile prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_prod.dart",
+            "args": ["--flavor","prod","--target","lib/flavours/main_prod.dart"]
+        },
+        {
+            "name": "mobile stage",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_staging.dart",
+            "args": ["--flavor","stage","--target","lib/flavours/main_staging.dart"]
+        },
+        // {
+        //     "name": "mobile (profile mode)",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "mobile (release mode)",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // }
+    ]
+}
