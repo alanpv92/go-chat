@@ -58,7 +58,26 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+   flavorDimensions "default"
+   productFlavors {
+    prod {
+        dimension "default"
+        applicationIdSuffix ""
+        resValue "string", "app_name", "Go Chat"
+    }
+    stage {
+        dimension "default"
+        applicationIdSuffix ".stage"
+        resValue "string", "app_name", "Go Chat stage"
+    }
+    dev {
+        dimension "default"
+        applicationIdSuffix ".dev"
+        resValue "string", "app_name", "Go Chat dev"
+    }
 }
+}
+ 
 
 flutter {
     source '../..'
