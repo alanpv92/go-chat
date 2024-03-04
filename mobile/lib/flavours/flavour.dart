@@ -1,4 +1,4 @@
-enum FlavourMode { prod, qa, dev }
+enum FlavourMode { prod, stage, dev }
 
 class Flavour {
   FlavourMode flavourMode;

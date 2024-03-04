@@ -1,5 +1,5 @@
-import 'package:mobile/main_common.dart';
+import 'package:mobile/common_export.dart';
 
 void main(List<String> args) {
-  mainCommon(args);
+  mainCommon( Flavour(flavourMode: FlavourMode.prod));
 }
